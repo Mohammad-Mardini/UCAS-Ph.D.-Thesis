@@ -1,0 +1,101 @@
+\documentclass[twoside]{Style/ucasthesis} % Calling document class
+\usepackage[authoryear,list]{Style/artratex} % Calling Bibliography style
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+% The following are some commands that might be useful 
+% Orbital properties
+\newcommand{\rapo}{r_\ensuremath{\mathrm{apo}}}
+\newcommand{\rperi}{r_\ensuremath{\mathrm{peri}}}
+\newcommand{\zmax}{Z_\ensuremath{\mathrm{max}}}
+\def\vector#1{\mbox{\boldmath $#1$}}
+
+% Stellar Archaeology Commands
+\newcommand{\Eexc}{$E_{\rm exc}$}
+\newcommand{\Teff}{$T_{\rm eff}$}  % Command for Teff, text mode
+\newcommand{\kms}{km\,s$^{-1}$}
+\def\ione{\,{\sc i}}
+\def\ii{\,{\sc ii}}
+\def\iii{\,{\sc iii}}
+\def\iv{\,{\sc iv}}
+\newcommand{\eps}[1]{\ensuremath{\log\epsilon\,(\mathrm{#1})}}
+\newcommand{\xx}{{\tablenotemark{a}}}
+\newcommand{\yy}{{\tablenotemark{b}}}
+\newcommand{\zz}{{\tablenotemark{c}}}
+\newcommand{\abund}[2]{\ensuremath{[\mathrm{#1}/\mathrm{#2}]}}
+\newcommand{\cfe}{\abund{C}{Fe}}
+\newcommand{\nfe}{\abund{N}{Fe}}
+\newcommand{\xfe}[1]{\abund{#1}{Fe}}
+\newcommand{\metal}{\abund{Fe}{H}}
+\newcommand{\cemp}{{CEMP}}
+\newcommand{\teff}{\ensuremath{T_\mathrm{eff}}}
+\newcommand{\logg}{\ensuremath{\log\,g}}
+\newcommand{\Msun}{\mathrm{M}_\odot}
+\newcommand{\Lsun}{\mathrm{L}_\odot}
+\newcommand{\A}[1]{\ensuremath{A(\mathrm{#1})}}
+\newcommand{\dex}{\ensuremath{\mathrm{dex}}}
+\newcommand{\erg}{\ensuremath{\mathrm{erg}}}
+\newcommand{\K}{\ensuremath{\mathrm{K}}}
+\newcommand{\Gyr}{\ensuremath{\mathrm{Gyr}}}
+\renewcommand{\labelitemi}{$\blacksquare$}
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+% Your thesis starts from here
+
+
+\input{Tex/Front_information}   % Contains personal information.
+
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+
+
+
+\begin{document}
+\frontmatter
+\input{Tex/Front_matter}
+{
+\linespread{1.2}% local line space
+\intobmk*{\cleardoublepage}{\contentsname}% add link to bookmark
+\tableofcontents% content catalog
+
+\intobmk*{\cleardoublepage}{\listfigurename}% add link to bookmark
+\listoffigures% figure catalog
+\intobmk*{\cleardoublepage}{\listtablename}% add link to bookmark
+\listoftables% table catalog
+}
+\mainmatter
+
+
+
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+% Thesis's chapters
+
+\input{Tex/introduction}
+\input{Tex/Observational_Data}
+\input{Tex/Data_reductions}
+\input{Tex/Stellar_parameters}
+\input{Tex/Discovery}
+\input{Tex/Chemo}
+\input{Tex/Conclusions}
+\appendix% initialize the environment
+\input{Tex/Appendix_A}% appendix content
+\input{Tex/Appendix_B}% appendix content
+\cleardoublepage
+
+
+
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+%=====================================================================================================================================================
+% Bibliography
+
+\bibliography{Biblio/ref}
+\end{document}
+%---------------------------------------------------------------------------%

@@ -1,0 +1,25 @@
+\chapter{Target Selection and Observations}\label{chap:introduction}
+
+\section{Target Selection From LAMOST survey}
+Our sample stars were chosen from the Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST) survey
+\citep{2006ChJAA...6..265Z, 2012RAA....12..723Z, 2012RAA....12.1197C}. This national scientific research tools (reflecting Schmidt telescope) served, with its 4000 fibers, the National Astronomical Observatories of China (NAOC). With a view field of 20 deg in the sky, LAMOST obtained more than five million spectra (with a wavelength range of 3690-9100 {\AA}\, and resolving power of R$ \sim$ 1800) of various stellar objects (stars, galaxies, quasars, etc.). With SNR  larger than 10 for 3,374,398 stellar objects in g- and i-bands, the LAMOST's third data release (DR3 \footnote{http://dr3.lamost.org/}) has been published online. The public online data products include many fundamental stellar quantities (e.g., stellar parameters, radial velocities). We ran two separate approaches to estimate the metallicity ([Fe/H]) of each stellar object. The following paragraphs can highlight these two methods:
+
+
+\begin{description}
+  \item[The first approach:] \hfill \\ In this approach, we used the stellar synthesis code SPECTRUM \footnote{http://www.appstate.edu/~grayro/spectrum/spectrum.html} \citep{1994AJ....107..742G} and an interpolated stellar atmosphere models adopted from the 1D ATLAS NEWODF grid of \citet{2003IAUS..210P.A20C}\footnote{http://kurucz.harvard.edu}, to generate grid templates. We have used this grid templates to compare it with LAMOST's spectra to estimate their [Fe/H]. This approach directly depends upon the line indices; 27 lines were have been selected in accordance with SEGUE stellar atmospheric parameter pipeline and Lick indices\footnote{http://astro.wsu.edu/worthey/html/index.table.html}. 
+
+  \item[The second approach:] \hfill \\ In this approach, we have directly correlated the observed flux in a LAMOST's spectrum with a synthetic spectrum. These synthetic spectra have a wavelength range of 4360-5500{\AA}; which contain enough numerable chemical features sensitive to the altar of the atmospheric parameters (effective temperature, surface gravity, and metallicity), and prevent any potential CH contamination neighboring the G-band (4300{\AA}). 
+\end{description}
+
+It is worth mentioning that the initial atmospheric parameters that we have used to generate the synthetic spectra have been selected based on photometrical estimations. We cross match our sample with two catalogs 
+from the Virtual Observatory:  The fourth US Naval Observatory CCD Astrograph Catalog (UCAC4, \citealt{2013AJ....145...44Z} ) and the Two Micron All Sky Survey (2MASS, \citealt{2006AJ....131.1163S}) and then
+employ \citet{2005ApJ...626..465R} temperature calibration.
+
+Based on the two approaches, we indicate a star with [Fe/H] $< -2.0$ dex and effective temperature in between 4000 and 7000 K as a potential VMP star candidate. This effective temperature range eliminates low-luminosity, late-type, and blueward MS-turnoff stars. Moreover, WD stars, with reasonably low temperature, and candidate stars with relatively low SNR were discarded. Thirteen stars were selected to obtain high-resolution observations, which represent the data for the following subsection.
+
+
+\section{High-resolution Observations with Lick/APF}
+
+The Automated Planet Finder (APF) is Lick Observatory's latest telescope, which was engaged entirely on the Mt. Hamilton mountain in August 2013. APF telescope with its capability to detect and observe planets that might sustain life in an extrasolar system considered as the first of its kind. This fully robotic optical telescope, with its 2.4-meter mirror and the high-resolution spectrograph (Levy spectrograph),  explores nearby stars every night. The supreme aim of APF's research is to find as much as possible of Earth-like planets, which might hold life. Levy spectrograph utilizes a large dispersing prism to deliver the stellar object's light to concentrate on the APF's CCD, to examine and store the spectrum of this object. With a slit width of 2 arc-seconds, an echelle spectrum with resolutions of 100,000  can be efficiently obtained over the whole Iodine region; it may reach 150,000 in some circumstances, and a wavelength range from 3740{\AA}-9700{\AA}. For more information about this telescope and its instruments, we refer the reader to \citet{2014SPIE.9145E..2BR}. We obtain high-resolution spectra (R = 110,000), covering the wavelength range of ($3740$-$9700$ {\AA}\,), for a sample of 13 stars. In addition, we observed HD2796 as a standard. 
+
+
